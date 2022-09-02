@@ -1,0 +1,10 @@
+---
+ - name: Ansible install DSTAT 
+   hosts: ubuntu 
+   become: true
+   tasks: 
+    - name: Ansible install DSTAT 
+      apt:
+        name: dstat 
+        state: latest
+        update_cache: yes
