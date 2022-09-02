@@ -1,0 +1,13 @@
+# This command will run apt update on my home lab servers and reboot if required. 
+# This command will run on my stand alone hosts server name $ansible-tower.  
+#ansible-playbook --ask-become-pass update_apt_ubuntu.yml
+#
+#
+# ping my lab servers from my ansible servers for two groups of servres, raspberry nodes and Ubuntu servers.
+# ansible -m ping ubuntu
+# ansible -m ping pi
+#
+# Display uptime for all my ubuntu lab servers. 
+# ansible ubuntu -a "uptime"
+# ansible pi -a "uptime"
+# ansible all -m ping <---- ping all nodes in my environment. 
